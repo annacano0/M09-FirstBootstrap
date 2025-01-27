@@ -13,7 +13,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-<body>
+<body class="d-flex flex-column vh-100">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
             <div class="container">
@@ -37,27 +37,43 @@
             </div>
         </nav>
     </header>
-    <aside>
-        <h2>Secció lateral</h2>
-        <ul>
-            <li><a href="#">Enllaç 1</a></li>
-            <li><a href="#">Enllaç 2</a></li>
-            <li><a href="#">Enllaç 3</a></li>
-            <li><a href="#">Enllaç 4</a></li>
-        </ul>
-    </aside>
 
-    <footer>
-        <p>&copy; 2025 Muchosmichis. Tots els drets reservats.</p>
-        <nav>
-            <ul>
-                <li><a href="#">Política de privacitat</a></li>
-                <li><a href="#">Termes de servici</a></li>
-                <li><a href="#">Contacte</a></li>
-            </ul>
-        </nav>
+    <div class="container-fluid flex-grow-1 d-flex">
+        <div class="row flex-grow-1 w-100">
+            <aside class="col-md-3 bg-light p-4 border-end">
+                <h2 class="h4 text-primary mb-3">Secció lateral</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Enllaç 1</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Enllaç 2</a></li>
+                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Enllaç 3</a></li>
+                    <li><a href="#" class="text-decoration-none text-dark">Enllaç 4</a></li>
+                </ul>
+            </aside>
+
+            <main class="col-md-9 p-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptas eaque alias sequi, illo mollitia, exercitationem harum animi dolor nesciunt quod? Ratione explicabo voluptate facere quia sint molestias soluta ut?</p>
+            </main>
+        </div>
+    </div>
+
+    <footer class="bg-light text-gray py-3">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 Muchosmichis. Tots els drets reservats.</p>
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="text-decoration-none text-black-50">Política de privacitat</a>
+                    </li>
+                    <li class="list-inline-item me-3">
+                        <a href="#" class="text-decoration-none text-black-50">Termes de servici</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-decoration-none text-black-50">Contacte</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </footer>
-
 </body>
 
 </html>
