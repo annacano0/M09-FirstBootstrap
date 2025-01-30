@@ -13,67 +13,93 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-<body class="d-flex flex-column vh-100">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-            <div class="container">
-                <a class="navbar-brand" href="#">Muchosmichis</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacte</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre nosaltres</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<body class="bg-black">
+    <header class="bg-dark d-flex flex-wrap justify-content-between align-items-center py-3 border-bottom px-3">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img class="bi me-2" src="./img/bootstrap-logo.png" alt="Bootstrap logo" width="40" height="40">
+            <span class="fs-4">Encabezado simple</span>
+        </a>
+    
+        <nav>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Caracteristicas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Precios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Acerca de</a>
+                </li>
+            </ul>
         </nav>
     </header>
+    
 
-    <div class="container-fluid flex-grow-1 d-flex">
-        <div class="row flex-grow-1 w-100">
-            <aside class="col-md-3 bg-light p-4 border-end">
-                <h2 class="h4 text-primary mb-3">Secció lateral</h2>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Enllaç 1</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Enllaç 2</a></li>
-                    <li class="mb-2"><a href="#" class="text-decoration-none text-dark">Enllaç 3</a></li>
-                    <li><a href="#" class="text-decoration-none text-dark">Enllaç 4</a></li>
-                </ul>
-            </aside>
-
-            <main class="col-md-9 p-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptas eaque alias sequi, illo mollitia, exercitationem harum animi dolor nesciunt quod? Ratione explicabo voluptate facere quia sint molestias soluta ut?</p>
-            </main>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: 100vh;">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img class="bi me-2" src="./img/bootstrap-logo.png" alt="Bootstrap logo" width="40" height="40">
+            <span class="fs-4">Barra lateral</span>
+        </a>
+    
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">
+                    Inicio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">
+                    Panel de control
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">
+                    Pedidos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-white">
+                    Clientes
+                </a>
+            </li>
+        </ul>
+    
+        <hr>
+    
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./img/user.png" alt="User" width="32" height="32" class="rounded-circle me-2">
+                <strong>Usuario</strong>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Ajustes</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+            </ul>
         </div>
     </div>
+    
+    </div>
 
-    <footer class="bg-light text-gray py-3">
-        <div class="container text-center">
-            <p class="mb-2">&copy; 2025 Muchosmichis. Tots els drets reservats.</p>
-            <nav>
-                <ul class="list-inline">
-                    <li class="list-inline-item me-3">
-                        <a href="#" class="text-decoration-none text-black-50">Política de privacitat</a>
-                    </li>
-                    <li class="list-inline-item me-3">
-                        <a href="#" class="text-decoration-none text-black-50">Termes de servici</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="text-decoration-none text-black-50">Contacte</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+    <footer class="py-3 my-4 bg-dark text-white">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Características</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Precios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Acerca de</a></li>
+        </ul>
+        <p class="text-center text-white">© 2024 Company, Inc</p>
+    </footer>    
+    
 </body>
 
 </html>
